@@ -5,6 +5,14 @@
   "description": "A local AI job search tool that finds matching roles, tailors your resume and cover letter, and tracks applications.",
   "author": "Yashada Ghag",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashadaGhag/applymate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YashadaGhag/applymate/issues"
+  },
+  "homepage": "https://github.com/YashadaGhag/applymate#readme",
   "type": "module",
   "engines": {
     "node": ">=22.13.0"

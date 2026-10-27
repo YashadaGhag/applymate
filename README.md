@@ -16,7 +16,7 @@ Built and tested for product designers. Other roles should work but are untested
 ## Setup
 
 ```bash
-git clone <this repo's URL>
+git clone https://github.com/YashadaGhag/applymate.git
 cd applymate
 npm install
 cp .env.example .env
