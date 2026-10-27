@@ -1,0 +1,5 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 270-degree arc loader -->
+  <circle cx="30" cy="30" r="26" stroke="#E8EAFC" stroke-width="5" stroke-linecap="round"/>
+  <path d="M30 4C44.3594 4 56 15.6406 56 30C56 44.3594 44.3594 56 30 56C15.6406 56 4 44.3594 4 30" stroke="#5468D6" stroke-width="5" stroke-linecap="round"/>
+</svg>

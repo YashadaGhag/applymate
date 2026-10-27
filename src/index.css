@@ -1,0 +1,137 @@
+/* @import must come first in PostCSS, then @config wires up the JS token file */
+/* Inter is the UI font and the resume's default. Merriweather, Lato and Roboto are the resume
+   editor's other font choices (src/components/ResumeEditor/fonts.js). Regular, bold and italic. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* ─── Base ─────────────────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Tailwind v4 no longer gives buttons a pointer cursor. Enabled buttons and role="button"
+     elements get one here; a disabled one keeps the default cursor, and any cursor-* utility
+     (utilities layer) still wins. */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+
+  html {
+    /* Always reserve the scrollbar's width, so a page that needs a scrollbar doesn't shift its
+       centered content sideways against one that doesn't (switching Change Preferences tabs),
+       and a dialog hiding the scrollbar doesn't shift the page. */
+    scrollbar-gutter: stable;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: theme(colors.neutral.800);
+    background-color: theme(colors.neutral.50);
+  }
+
+  :root {
+  --font-h1: 40px;
+  --leading-h1: 40px;
+  --font-h2: 32px;
+  --leading-h2: 32px;
+  --font-h3: 28px;
+  --leading-h3: 28px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-h1: 48px;
+    --leading-h1: 48px;
+    --font-h2: 32px;
+    --leading-h2: 32px;
+    --font-h3: 28px;
+    --leading-h3: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font-h1: 64px;
+    --leading-h1: 64px;
+    --font-h2: 48px;
+    --leading-h2: 48px;
+    --font-h3: 32px;
+    --leading-h3: 32px;
+  }
+}
+
+  h1 { font-size: var(--font-h1); line-height: var(--leading-h1); font-weight: 700; }
+  h2 { font-size: var(--font-h2); line-height: var(--leading-h2); font-weight: 700; }
+  h3 { font-size: var(--font-h3); line-height: var(--leading-h3); font-weight: 600; }
+  h4 { font-size: 24px; line-height: 24px; font-weight: 600; }
+  h5 { font-size: 20px; line-height: 20px; font-weight: 600; }
+
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+    color: theme(colors.neutral.900);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: theme(colors.primary.500);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: theme(colors.primary.600);
+  }
+}
+
+/* ─── Print: Export PDF on Customize Application ─────────────────────
+   Printing shows only #resume-print (a copy of the edited document rendered outside #root, see
+   src/components/ResumeEditor/ResumeEditor.jsx) on US Letter. Colors print as edited. No block
+   splits across pages (the name, paragraphs, bullets, entry lines), and a section or entry heading
+   stays with what follows it. These are the rules the editor's on-screen pages replay
+   (src/components/ResumeEditor/pagination.js): change them together. */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+
+  html,
+  body {
+    background: theme(colors.white);
+  }
+
+  #root {
+    display: none !important;
+  }
+
+  #resume-print {
+    display: block !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #resume-print h1,
+  #resume-print p,
+  #resume-print li,
+  #resume-print h3 {
+    break-inside: avoid;
+  }
+
+  #resume-print h2,
+  #resume-print h3 {
+    break-after: avoid;
+  }
+}

@@ -1,0 +1,492 @@
+[
+  {
+    "name": "1Password",
+    "domain": "1password.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "1password",
+    "totalOpenRolesAtCuration": 69
+  },
+  {
+    "name": "Airbnb",
+    "domain": "airbnb.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "airbnb",
+    "totalOpenRolesAtCuration": 154
+  },
+  {
+    "name": "Airtable",
+    "domain": "airtable.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "airtable",
+    "totalOpenRolesAtCuration": 4
+  },
+  {
+    "name": "Amplitude",
+    "domain": "amplitude.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "amplitude",
+    "totalOpenRolesAtCuration": 36
+  },
+  {
+    "name": "Anthropic",
+    "domain": "anthropic.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "anthropic",
+    "totalOpenRolesAtCuration": 639
+  },
+  {
+    "name": "Asana",
+    "domain": "asana.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "asana",
+    "totalOpenRolesAtCuration": 97
+  },
+  {
+    "name": "Attentive",
+    "domain": "attentive.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "attentive",
+    "totalOpenRolesAtCuration": 32
+  },
+  {
+    "name": "Brex",
+    "domain": "brex.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "brex",
+    "totalOpenRolesAtCuration": 282
+  },
+  {
+    "name": "Calendly",
+    "domain": "calendly.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "calendly",
+    "totalOpenRolesAtCuration": 10
+  },
+  {
+    "name": "Carta",
+    "domain": "carta.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "carta",
+    "totalOpenRolesAtCuration": 75
+  },
+  {
+    "name": "Checkr",
+    "domain": "checkr.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "checkr",
+    "totalOpenRolesAtCuration": 46
+  },
+  {
+    "name": "CircleCI",
+    "domain": "circleci.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "circleci",
+    "totalOpenRolesAtCuration": 12
+  },
+  {
+    "name": "Clever",
+    "domain": "clever.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "clever",
+    "totalOpenRolesAtCuration": 2
+  },
+  {
+    "name": "ClickUp",
+    "domain": "clickup.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "clickup",
+    "totalOpenRolesAtCuration": 48
+  },
+  {
+    "name": "Cohere",
+    "domain": "cohere.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "cohere",
+    "totalOpenRolesAtCuration": 137
+  },
+  {
+    "name": "Coinbase",
+    "domain": "coinbase.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "coinbase",
+    "totalOpenRolesAtCuration": 229
+  },
+  {
+    "name": "Confluent",
+    "domain": "confluent.io",
+    "atsPlatform": "ashby",
+    "atsSlug": "confluent",
+    "totalOpenRolesAtCuration": 17
+  },
+  {
+    "name": "Coursera",
+    "domain": "coursera.org",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "coursera",
+    "totalOpenRolesAtCuration": 15
+  },
+  {
+    "name": "Culture Amp",
+    "domain": "cultureamp.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "cultureamp",
+    "totalOpenRolesAtCuration": 32
+  },
+  {
+    "name": "Datadog",
+    "domain": "datadoghq.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "datadog",
+    "totalOpenRolesAtCuration": 444
+  },
+  {
+    "name": "Discord",
+    "domain": "discord.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "discord",
+    "totalOpenRolesAtCuration": 51
+  },
+  {
+    "name": "Drata",
+    "domain": "drata.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "drata",
+    "totalOpenRolesAtCuration": 35
+  },
+  {
+    "name": "Duolingo",
+    "domain": "duolingo.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "duolingo",
+    "totalOpenRolesAtCuration": 59
+  },
+  {
+    "name": "Faire",
+    "domain": "faire.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "faire",
+    "totalOpenRolesAtCuration": 80
+  },
+  {
+    "name": "Fastly",
+    "domain": "fastly.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "fastly",
+    "totalOpenRolesAtCuration": 43
+  },
+  {
+    "name": "Figma",
+    "domain": "figma.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "figma",
+    "totalOpenRolesAtCuration": 162
+  },
+  {
+    "name": "Flexport",
+    "domain": "flexport.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "flexport",
+    "totalOpenRolesAtCuration": 199
+  },
+  {
+    "name": "Gemini",
+    "domain": "gemini.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "gemini",
+    "totalOpenRolesAtCuration": 34
+  },
+  {
+    "name": "GitLab",
+    "domain": "gitlab.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "gitlab",
+    "totalOpenRolesAtCuration": 211
+  },
+  {
+    "name": "Grafana Labs",
+    "domain": "grafana.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "grafanalabs",
+    "totalOpenRolesAtCuration": 121
+  },
+  {
+    "name": "Gusto",
+    "domain": "gusto.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "gusto",
+    "totalOpenRolesAtCuration": 94
+  },
+  {
+    "name": "Included Health",
+    "domain": "includedhealth.com",
+    "atsPlatform": "lever",
+    "atsSlug": "includedhealth",
+    "totalOpenRolesAtCuration": 53
+  },
+  {
+    "name": "Instacart",
+    "domain": "instacart.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "instacart",
+    "totalOpenRolesAtCuration": 131
+  },
+  {
+    "name": "Instructure",
+    "domain": "instructure.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "instructure",
+    "totalOpenRolesAtCuration": 41
+  },
+  {
+    "name": "Klaviyo",
+    "domain": "klaviyo.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "klaviyo",
+    "totalOpenRolesAtCuration": 133
+  },
+  {
+    "name": "Lattice",
+    "domain": "lattice.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "lattice",
+    "totalOpenRolesAtCuration": 12
+  },
+  {
+    "name": "LaunchDarkly",
+    "domain": "launchdarkly.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "launchdarkly",
+    "totalOpenRolesAtCuration": 59
+  },
+  {
+    "name": "Linear",
+    "domain": "linear.app",
+    "atsPlatform": "ashby",
+    "atsSlug": "linear",
+    "totalOpenRolesAtCuration": 30
+  },
+  {
+    "name": "Lob",
+    "domain": "lob.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "lob",
+    "totalOpenRolesAtCuration": 5
+  },
+  {
+    "name": "Medium",
+    "domain": "medium.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "medium",
+    "totalOpenRolesAtCuration": 1
+  },
+  {
+    "name": "Miro",
+    "domain": "miro.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "miro",
+    "totalOpenRolesAtCuration": 28
+  },
+  {
+    "name": "MongoDB",
+    "domain": "mongodb.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "mongodb",
+    "totalOpenRolesAtCuration": 390
+  },
+  {
+    "name": "Mozilla",
+    "domain": "mozilla.org",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "mozilla",
+    "totalOpenRolesAtCuration": 90
+  },
+  {
+    "name": "Netlify",
+    "domain": "netlify.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "netlify",
+    "totalOpenRolesAtCuration": 5
+  },
+  {
+    "name": "Nextdoor",
+    "domain": "nextdoor.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "nextdoor",
+    "totalOpenRolesAtCuration": 19
+  },
+  {
+    "name": "Okta",
+    "domain": "okta.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "okta",
+    "totalOpenRolesAtCuration": 368
+  },
+  {
+    "name": "PagerDuty",
+    "domain": "pagerduty.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "pagerduty",
+    "totalOpenRolesAtCuration": 53
+  },
+  {
+    "name": "Palantir",
+    "domain": "palantir.com",
+    "atsPlatform": "lever",
+    "atsSlug": "palantir",
+    "totalOpenRolesAtCuration": 319
+  },
+  {
+    "name": "Pendo",
+    "domain": "pendo.io",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "pendo",
+    "totalOpenRolesAtCuration": 23
+  },
+  {
+    "name": "Perplexity",
+    "domain": "perplexity.ai",
+    "atsPlatform": "ashby",
+    "atsSlug": "perplexity",
+    "totalOpenRolesAtCuration": 127
+  },
+  {
+    "name": "Pinterest",
+    "domain": "pinterest.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "pinterest",
+    "totalOpenRolesAtCuration": 168
+  },
+  {
+    "name": "Postscript",
+    "domain": "postscript.io",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "postscript",
+    "totalOpenRolesAtCuration": 6
+  },
+  {
+    "name": "Ramp",
+    "domain": "ramp.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "ramp",
+    "totalOpenRolesAtCuration": 157
+  },
+  {
+    "name": "Reddit",
+    "domain": "reddit.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "reddit",
+    "totalOpenRolesAtCuration": 152
+  },
+  {
+    "name": "Render",
+    "domain": "render.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "render",
+    "totalOpenRolesAtCuration": 40
+  },
+  {
+    "name": "Ro",
+    "domain": "ro.co",
+    "atsPlatform": "lever",
+    "atsSlug": "ro",
+    "totalOpenRolesAtCuration": 56
+  },
+  {
+    "name": "Robinhood",
+    "domain": "robinhood.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "robinhood",
+    "totalOpenRolesAtCuration": 162
+  },
+  {
+    "name": "Roblox",
+    "domain": "roblox.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "roblox",
+    "totalOpenRolesAtCuration": 254
+  },
+  {
+    "name": "Samsara",
+    "domain": "samsara.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "samsara",
+    "totalOpenRolesAtCuration": 246
+  },
+  {
+    "name": "Sentry",
+    "domain": "sentry.io",
+    "atsPlatform": "ashby",
+    "atsSlug": "sentry",
+    "totalOpenRolesAtCuration": 43
+  },
+  {
+    "name": "Snyk",
+    "domain": "snyk.io",
+    "atsPlatform": "ashby",
+    "atsSlug": "snyk",
+    "totalOpenRolesAtCuration": 13
+  },
+  {
+    "name": "Squarespace",
+    "domain": "squarespace.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "squarespace",
+    "totalOpenRolesAtCuration": 33
+  },
+  {
+    "name": "Substack",
+    "domain": "substack.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "substack",
+    "totalOpenRolesAtCuration": 17
+  },
+  {
+    "name": "Thumbtack",
+    "domain": "thumbtack.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "thumbtack",
+    "totalOpenRolesAtCuration": 57
+  },
+  {
+    "name": "Typeform",
+    "domain": "typeform.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "typeform",
+    "totalOpenRolesAtCuration": 16
+  },
+  {
+    "name": "Udemy",
+    "domain": "udemy.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "udemy",
+    "totalOpenRolesAtCuration": 9
+  },
+  {
+    "name": "Vanta",
+    "domain": "vanta.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "vanta",
+    "totalOpenRolesAtCuration": 84
+  },
+  {
+    "name": "Vercel",
+    "domain": "vercel.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "vercel",
+    "totalOpenRolesAtCuration": 85
+  },
+  {
+    "name": "Webflow",
+    "domain": "webflow.com",
+    "atsPlatform": "greenhouse",
+    "atsSlug": "webflow",
+    "totalOpenRolesAtCuration": 25
+  },
+  {
+    "name": "Zapier",
+    "domain": "zapier.com",
+    "atsPlatform": "ashby",
+    "atsSlug": "zapier",
+    "totalOpenRolesAtCuration": 11
+  }
+]

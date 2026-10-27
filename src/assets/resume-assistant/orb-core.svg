@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle id="Orb core" cx="28" cy="28" r="28" fill="url(#paint0_radial_0_164)"/>
+<defs>
+<radialGradient id="paint0_radial_0_164" cx="0" cy="0" r="1" gradientTransform="matrix(32.48 36.4 -15.12 36.4 17.92 11.2)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F6F7FD"/>
+<stop offset="0.4" stop-color="#EFF1FC"/>
+<stop offset="1" stop-color="#5065D3"/>
+</radialGradient>
+</defs>
+</svg>
