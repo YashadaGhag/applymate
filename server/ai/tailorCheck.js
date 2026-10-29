@@ -4,7 +4,7 @@ import { appearsIn, flatten, STRONG_CLAIMS } from "./scoreJob.js";
  * Plain-code check run after a tailored draft is complete: does the draft contain anything the
  * original resume doesn't? Flags numbers and percentages, dates, company names, job titles and
  * degrees that are new, plus contact details, locations and entry names that weren't copied
- * exactly. The UI shows "Nothing added" only when verified is true.
+ * exactly. The UI shows the tick "Numbers, dates, names and titles match ..." only when verified is true.
  *
  * It's deliberately strict: a reworded date ("Oct 2021" for "October 2021") passes, but anything
  * it can't match in the resume is flagged for the person to look at rather than assumed fine.

@@ -322,14 +322,15 @@ const KIND_LABELS = {
   entry: "entry",
 };
 
-// The "nothing added" tick only when the check verified; otherwise the flagged items.
+// The tick ("Numbers, dates, names and titles match ...") only when the check verified; otherwise the
+// flagged items. The wording says only what the check compares (see tailorCheck.js).
 // `against`: what the document was checked against ("your base resume", "your resume").
 function CheckLine({ check, against }) {
   if (!check) return null;
   return check.verified ? (
     <div className="flex items-start gap-sp8">
       <Check size={24} className="shrink-0 text-neutral-800" aria-hidden="true" />
-      <span className="flex-1 text-body-small text-neutral-700">Nothing added that isn&apos;t in {against}</span>
+      <span className="flex-1 text-body-small text-neutral-700">Numbers, dates, names and titles match {against}</span>
     </div>
   ) : (
     <div className="flex items-start gap-sp8">
