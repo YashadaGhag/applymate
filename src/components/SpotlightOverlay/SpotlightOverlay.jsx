@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import Callout from "../Callout/Callout";
+import { sameRect } from "../../utils/spotlightRect";
 
 const CALLOUT_GAP = 16;
 
@@ -17,13 +18,24 @@ const SpotlightOverlay = ({
 
   const updateRect = useCallback(() => {
     if (targetRef.current) {
-      setTargetRect(targetRef.current.getBoundingClientRect());
+      const next = targetRef.current.getBoundingClientRect();
+      setTargetRect((prev) => (sameRect(prev, next) ? prev : next));
     }
   }, [targetRef]);
 
   useEffect(() => {
+    let observer = null;
     const timer = setTimeout(() => {
       requestAnimationFrame(updateRect);
+      // After the first measure, follow layout shifts the window events miss (the CTA row appearing
+      // and pushing the target down). Observed only now so the overlay never shows before the 100 ms
+      // measure. The callback only re-measures and skips unchanged rects; the overlay is position:
+      // fixed, so it cannot resize the target or the body and the observer cannot loop.
+      if (typeof ResizeObserver !== "undefined") {
+        observer = new ResizeObserver(updateRect);
+        if (targetRef.current) observer.observe(targetRef.current);
+        observer.observe(document.body);
+      }
     }, 100);
 
     window.addEventListener("resize", updateRect);
@@ -31,10 +43,11 @@ const SpotlightOverlay = ({
 
     return () => {
       clearTimeout(timer);
+      if (observer) observer.disconnect();
       window.removeEventListener("resize", updateRect);
       window.removeEventListener("scroll", updateRect, true);
     };
-  }, [updateRect]);
+  }, [updateRect, targetRef]);
 
   useEffect(() => {
     // Gated on targetRect: if the target never shows up (e.g. the page it points at is still

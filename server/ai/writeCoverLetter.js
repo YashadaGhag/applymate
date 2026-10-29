@@ -22,7 +22,19 @@ const MODEL = "claude-sonnet-5-5";
 //     thinks. Code warns on more than 2 figures and on reflection phrases.
 // v4: shorter letters: about 200 to 300 words (was 250 to 350), in the prompt and the word-count
 //     warning.
-export const COVER_LETTER_VERSION = 4;
+// v5: 13 of 15 demo letters stated facts the resume doesn't support, mostly user behavior, causes and
+//     outcomes ("users struggled", "engineers kept coming back", "customers felt the change"). The
+//     prompt only forbade invented feelings and learning. Now a letter may state only facts, causes and
+//     outcomes the resume text gives: nothing about what users, customers, engineers or teams said,
+//     did, struggled with or felt, and no reasons or causes the resume doesn't state. The resume's own
+//     results stay allowed. The "nothing added" check can't see this kind of claim (it looks at
+//     numbers, dates, names and titles), so the prompt is the only guard.
+// v6: v5 removed invented behavior and causes, but letters still made first-person claims the resume
+//     doesn't ("is how I like to work", "a setup I know well", "comfortable sitting down with
+//     engineers", "second nature to me", "I know what it takes to…", "from first sketch to finished
+//     flow"). Now the prompt bans claims about feelings, preferences, comfort, familiarity, habits,
+//     frequency and unstated scope; the person is described by what the resume says they did.
+export const COVER_LETTER_VERSION = 6;
 
 // A letter is ~500 output tokens; the rest is room for thinking at medium effort. The first real
 // call used 678 output tokens in all.
@@ -94,6 +106,8 @@ What you may say about the person:
 - Keep the resume's strength of claim and its verbs: "mentored" is not "managed", "contributed to" is not "led", "prototyped" is not "shipped", "partnered with" is not "owned". Use a weaker or equal verb, never a stronger one.
 - If the posting asks for something the resume doesn't show, don't claim it and don't apologize for it; write about what the resume does show.
 - A sentence may connect a resume fact to the posting ("…which is the kind of work the role describes", "the posting asks for X, and this is where I did it"). It must never claim what the person felt, learned, believes, thinks, enjoys or took away from the work, unless the resume text or the writing-style notes say it. That includes indirect forms: "that work gave me a feel for…", "that project taught me…", "so I think carefully about…", "it showed me…". State the fact and its relevance to the role; leave the inner life out.
+- Every fact, cause and outcome you state must be in the resume text. Do not describe what users, customers, engineers, designers, stakeholders or teams said, did, asked for, struggled with, noticed, relied on or felt ("users struggled to…", "engineers kept coming back…", "customers felt the change", "the team had been working around…"), unless the resume says exactly that. Do not give a reason or cause the resume doesn't give: no "because…", "so that…", "which led to…", "after realizing…", "to fix a problem where…" for why work was done or why a result happened. Saying what the resume says it did and the result it states (its numbers and outcomes) is fine, in the resume's own terms. To make a point relevant, tie the resume fact to what the posting asks for ("the role asks for X; at [employer] I did Y"), never to a story about what happened around it. If you cannot make the connection without an invented behavior or cause, state the plain resume fact and its relevance and stop.
+- Describe what the person did in the resume's own wording, and nothing around it. Do not claim how they feel, what they like or prefer, what they are comfortable with, how well they know or understand something, how they like to work, what their habits or routines are, or how often or how thoroughly they do something, unless the resume says so. That rules out "is how I like to work", "I'm comfortable…", "a setup I know well", "second nature to me", "every day", "I know what it takes to…", "I like keeping…", "my habit is…", and claims of range or scope the resume doesn't state ("from first sketch to finished flow", "end to end", "across the whole range"). A statement about the work is fine ("I defined empty, loading and error states for every dashboard widget"); a statement about the person's attitude, ease, knowledge or habits is not. Do not close a paragraph with a sentence about what the experience means to them or how it suits them: stop at the fact and its relevance to the role.
 
 What you may say about the company and the role:
 - Only what the posting states. Never invent company facts, culture, products, customers, history, values or mission. If the posting says little about the company, write about the role instead.
